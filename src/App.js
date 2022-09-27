@@ -5,21 +5,20 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Counter></Counter>
       </header>
     </div>
   );
+}
+
+function Counter(){
+  return(
+    <div>
+      <h1>Start Count</h1>
+      <button>Increase</button>
+      <button>Decrease</button>
+    </div>
+  )
 }
 
 export default App;
